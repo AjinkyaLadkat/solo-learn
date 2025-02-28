@@ -1,0 +1,219 @@
+/* Reset & Global Styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Shape */
+
+
+.background-shape {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(60, 59, 60);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures it stays behind content */
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sololearn-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .menu-text {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Leaderboard Title */
+h1 {
+    font-size: 32px;
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Leaderboard Box */
+.leaderboard {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.leaderboard-gif {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.step-by-step {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: black;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    width: 100%;
+    color: black;
+}
+
+.sidebar .section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+}
+
+.league-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.league-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.league-icon.locked {
+    opacity: 0.5;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    padding: 12px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.xp-text {
+    font-size: 14px;
+    color: grey;
+}
+
+.play-icon {
+    width: 20px;
+    height: 20px;
+} 
+
+/* Earn XP Section */
+.earn-xp {
+    padding: 15px;
+}
+
+.earn-xp-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* XP Buttons */
+.xp-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #eaf0f3;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.xp-button:hover {
+    background-color: rgb(219, 242, 248);
+}
+
+/* XP Text */
+.xp-text {
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+
+/* Play Icon */
+.play-icon {
+    width: 20px;
+    height: 20px;
+}

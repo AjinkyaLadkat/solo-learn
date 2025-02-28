@@ -9,31 +9,37 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex items-center cursor-pointer">
               <Code2 className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-xl font-bold text-gray-900">Sololearn</span>
             </div>
-            
-            <div className="hidden lg:flex items-center ml-8 space-x-1">
-            <Link to="/SignIn" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Learn
-</Link>
-<Link to="/" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Home
-</Link>
-<Link to="/SignIn" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
 
-  Code Playground   
-  
-</Link>
-                
-             
+            <div className="hidden lg:flex items-center ml-8 space-x-1">
+              <Link to="/SignIn" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Learn
+              </Link>
+              <Link to="/" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Home
+              </Link>
+              <Link to="/SignIn" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+
+                Code Playground
+
+              </Link>
+
+              <Link to="/leaderboard" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+
+                Leaderboard
+
+              </Link>
+
+
             </div>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             <div className="relative">
               <div className={`relative transition-all duration-300 ${isSearchFocused ? 'w-96' : 'w-64'}`}>
@@ -49,19 +55,19 @@ export default function Navbar() {
             </div>
             <Link to="/discuss" className="text-gray-600 hover:text-gray-900">Discuss</Link>
             <Link to="/TeamsPage" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Teams
-</Link>
+              Teams
+            </Link>
 
             <Link to="/Loginmain" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Sign in
-</Link>
-<Link to="/SignUp" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+              Sign in
+            </Link>
+            <Link to="/SignUp" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
               Sign Up Free
-              </Link>
+            </Link>
           </div>
-          
+
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-gray-900"
             >
@@ -90,16 +96,16 @@ export default function Navbar() {
               <a href="#" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">Learn</a>
               <a href="#" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">Code Playground</a>
               <Link to="/discuss" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Discuss
-</Link>
-<Link to="/TeamsPage" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Teams
-</Link>
+                Discuss
+              </Link>
+              <Link to="/TeamsPage" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Teams
+              </Link>
               <a href="#" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">Pro</a>
               <div className="pt-4 flex flex-col gap-2">
-              <Link to="/Loginmain" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-  Sign in
-</Link>
+                <Link to="/Loginmain" className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                  Sign in
+                </Link>
                 <button className="w-full text-center bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
                   Sign Up Free
                 </button>

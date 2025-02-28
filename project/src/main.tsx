@@ -8,6 +8,7 @@ import Loginmain from './components/Loginmain';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import CoursePage from './components/CoursePage';
+import Leaderboard from './components/Leaderboard';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/discuss" element={<Discuss />} />
         <Route path="/teamsPage" element={<TeamsPage />} />
         <Route path="/Loginmain" element={<Loginmain />} />
